@@ -15,7 +15,7 @@ async function bootstrap() {
     }
   } );
 
-  const logger = new Logger( 'Email Resend Microservice' );
+  const logger = new Logger( 'History Microservice' );
 
   app.useGlobalPipes(
     new ValidationPipe( {
@@ -26,6 +26,6 @@ async function bootstrap() {
 
   await app.listen();
 
-  logger.log( `Email Resend Microservice running on on port ${ envs.port }` );
+  logger.log( `History Microservice running on on port ${ envs.port }` );
 }
 bootstrap();
